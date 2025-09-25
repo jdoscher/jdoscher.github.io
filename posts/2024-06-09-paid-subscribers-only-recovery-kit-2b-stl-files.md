@@ -1,0 +1,10 @@
+---
+title: "Recovery Kit 2B STL Files"
+date: 2024-06-09
+slug: paid-subscribers-only-recovery-kit-2b-stl-files
+tags: []
+description: 
+canonical_url: 
+layout: post
+---
+<p>Thank you for subscribing and supporting my projects!  Below you will find the zip files with the STL binaries.  The battery cavity is the more complex part of this build, so the original article shows the build from as many angles as possible.  Happy printing!</p><div class="kg-card kg-file-card"><a class="kg-file-card-container" href="__GHOST_URL__/content/files/2024/06/doscher.com-recovery-kit-2B-STL-files.zip" title="Download" download=""><div class="kg-file-card-contents"><div class="kg-file-card-title">doscher.com recovery kit 2B STL files</div><div class="kg-file-card-caption"></div><div class="kg-file-card-metadata"><div class="kg-file-card-filename">doscher.com recovery kit 2B STL files.zip</div><div class="kg-file-card-filesize">250 KB</div></div></div><div class="kg-file-card-icon"><svg viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>download-circle</title><polyline class="a" points="8.25 14.25 12 18 15.75 14.25"></polyline><line class="a" x1="12" y1="6.75" x2="12" y2="18"></line><circle class="a" cx="12" cy="12" r="11.25"></circle></svg></div></a></div>
