@@ -1,0 +1,16 @@
+---
+layout: default
+title: Releases
+permalink: /releases/
+---
+
+<h1>Releases</h1>
+<ul>
+  {% assign items = site.posts | where_exp: "p", "p.tags contains 'release'" | sort: 'date' | reverse %}
+  {% for p in items %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      <small> — {{ p.date | date: "%Y-%m-%d" }}</small>
+    </li>
+  {% endfor %}
+</ul>

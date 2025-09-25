@@ -1,0 +1,29 @@
+title: "Doscher"
+url: "https://doscher.net"   # switch to doscher.com later
+baseurl: ""
+markdown: kramdown
+theme: minima
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:slug/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+defaults:
+  - scope:
+      path: "posts"
+      type: posts
+    values:
+      layout: post
+      sitemap: true
+
+# Optional: nicer feeds & sitemap
+feed:
+  collections:
+    - posts

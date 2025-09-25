@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>{{ page.title | escape }} — {{ site.title }}</title>
+    {% seo %}
+  </head>
+  <body>
+    <main style="max-width: 720px; margin: 2rem auto; padding: 0 1rem;">
+      <header>
+        <a href="{{ '/' | relative_url }}"><h2>{{ site.title }}</h2></a>
+        <nav><a href="{{ '/releases/' | relative_url }}">Releases</a></nav>
+        <hr>
+      </header>
+      {{ content }}
+      <hr>
+      <footer><small>© {{ "now" | date: "%Y" }} {{ site.title }}</small></footer>
+    </main>
+  </body>
+</html>
+

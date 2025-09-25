@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Latest</h1>
+<ul>
+  {% assign items = site.posts | sort: 'date' | reverse %}
+  {% for p in items limit:20 %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      <small> — {{ p.date | date: "%Y-%m-%d" }}</small>
+    </li>
+  {% endfor %}
+</ul>
+
