@@ -5,9 +5,7 @@ permalink: /releases/
 ---
 
 <h1>Releases</h1>
-{% assign items = site.pages
-   | where_exp: "p", "p.path contains 'posts/' and p.tags contains 'release'"
-   | sort: "date" | reverse %}
+{% assign items = site.pages | where_exp: "p", "p.path contains 'posts/' and p.tags contains 'release'" | sort: "date" | reverse %}
 {% if items.size == 0 %}
   <p>No releases yet. Check back soon.</p>
 {% else %}
