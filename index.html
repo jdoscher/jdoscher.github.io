@@ -4,12 +4,24 @@ title: Home
 ---
 
 <h1>Latest</h1>
-<ul>
-  {% assign items = site.posts | sort: 'date' | reverse %}
-  {% for p in items limit:20 %}
+<ul class="post-list">
+  {% assign items = site.pages
+     | where_exp: "p", "p.path contains 'posts/'"
+     | sort: "date" | reverse %}
+  {% for p in items limit: 20 %}
     <li>
-      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-      <small> — {{ p.date | date: "%Y-%m-%d" }}</small>
+      <div class="post-meta">
+        {{ p.date | date: "%Y-%m-%d" }}
+        {% if p.tags and p.tags.size > 0 %}
+          {% for t in p.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+        {% endif %}
+      </div>
+      <div class="post-title">
+        <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      </div>
+      {% if p.description %}
+        <div class="post-excerpt">{{ p.description }}</div>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
