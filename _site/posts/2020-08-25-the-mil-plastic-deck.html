@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="alternate" type="application/rss+xml" title="Doscher" href="/feed.xml">
+<link rel="stylesheet" href="/assets/site.css">
+
+
+    <title>the MIL-plastic deck — Doscher</title>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>the MIL-plastic deck | Doscher</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="the MIL-plastic deck" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://doscher.net/posts/2020-08-25-the-mil-plastic-deck.html" />
+<meta property="og:url" content="https://doscher.net/posts/2020-08-25-the-mil-plastic-deck.html" />
+<meta property="og:site_name" content="Doscher" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-25T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="the MIL-plastic deck" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-08-25T00:00:00-07:00","datePublished":"2020-08-25T00:00:00-07:00","headline":"the MIL-plastic deck","mainEntityOfPage":{"@type":"WebPage","@id":"https://doscher.net/posts/2020-08-25-the-mil-plastic-deck.html"},"url":"https://doscher.net/posts/2020-08-25-the-mil-plastic-deck.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <main style="max-width: 720px; margin: 2rem auto; padding: 0 1rem;">
+      <header>
+        <a href="/"><h2>Doscher</h2></a>
+        <nav><a href="/releases/">Releases</a></nav>
+        <hr>
+      </header>
+      <article>
+  <h1>the MIL-plastic deck</h1>
+  <p><small>August 25, 2020</small></p>
+  <p>This is a project that I’ve been working on for a few months over the quarantine, and I’m happy to share it here.  The idea is a simple one- many Makers asked me over the last year about printing smaller parts for the Raspberry Pi Recovery Kit, and I started playing around with options.  I knew I didn’t want to just re-hash the old deck, and I knew I really wanted a better display for this year.  Let’s jump in with what’s different:</p>
+<ul><li>No Pelican case required!  It’s pretty obvious from the photos that you don’t need to spend $50 or more on a case, especially if you are going to drill holes in it, or don’t actually need a waterproof case.</li></ul>
+<p>Smaller Bill of Materials (BOM).  The original Raspberry Pi Recovery kit was very expensive to build, primarily because I sourced the coolest looking parts I could, which can be expensive or just hard to get (like the keyboard).  This project has a much simpler BOM, so simple that here it is:</p>
+<ul><li>1 kg spool of Paramount 3D’s Olive Green PETG - <a href="https://amzn.to/31lMcqy">Amazon Link</a></li><li>(Optional) 1K spool of Carbon Fiber PETG and hardened steel nozzle - <a href="https://www.matterhackers.com/store/l/carbon-fiber-pro-series-petg-filament-1.75mm/sk/MHQ646TD">Link</a> and <a href="https://www.matterhackers.com/store/l/e3d-v6-extra-nozzle-hardened-steel-1.75mm-x-0.40mm/sk/MSDV7HN9">Link</a></li><li>Low profile, stainless steel M5 screws - <a href="https://www.mcmaster.com/92855A513/">McMaster Carr Link</a></li><li>M5 threaded rod - <a href="https://www.mcmaster.com/93325A413/">McMaster Carr</a> (<a href="https://amzn.to/2Evq9Vu">bolt cutters</a> are optional, but use safety gear)</li><li>Four threaded inserts - <a href="https://amzn.to/2FWzNBj">Amazon Link</a></li><li>Pimoroni HDMI Display - <a href="https://www.adafruit.com/product/4337">Adafruit Link</a></li><li>Short HDMI Cable - <a href="https://amzn.to/31tQP21">Amazon Link</a></li><li>Four brass M2.5 standoffs - <a href="https://amzn.to/2CUUKeF">Amazon Link</a></li><li>Raspberry Pi 4 - <a href="https://amzn.to/2YwHFzF">Amazon Link</a></li><li>Core Design - <a href="https://www.tinkercad.com/things/b4bWC7f62Ab-sizzling-fyyran/">Tinkercad Print Layout</a>, <a href="https://www.tinkercad.com/things/eTexyDTsTKR-stunning-kieran/">Tinkercad Assembled Version</a>, <a href="https://www.thingiverse.com/thing:4579460">Thingiverse</a></li><li>Thumb Screws - <a href="https://www.mcmaster.com/93886A240/">McMaster Carr</a></li><li>Cord Grip - <a href="https://www.mcmaster.com/8302K161/">McMaster Carr</a></li><li>Something easier to modify/hack over time.  The <a href="https://back7.co/home/raspberry-pi-recovery-kit">RPRK</a> was designed to be a “finished” product and execution on an idea, and with people making their own, I thought it would be more fun this time around if people could swap out parts for their own, even ones to radically change the look of the deck.</li><li>I abandoned panel mount ports on this project.  Panel mounts are often for looks only, at least on many of my older builds, and to keep costs down I just ditched them.  Big, rounded rectangle holes work for me, and don’t cost $15 each time I want to change something.</li><li>Finally, I wanted a design I could continue to refine and modify for my own projects.  Hopefully I’ll have more of those to share soon!</li></ul>
+<p>With that out of the way, let’s go over the basic design.  This can be used as assembly instructions in a pinch too.  Here’s the front frame, which the Pimoroni display will connect to.  That’s really done last, so we won’t see this part again for a while.</p>
+<p>The design is simple for the front- there are four threaded inserts for holding the display on the front.  Make sure they go on the front of the front frame.  There are two halves of the front frame, which is held together by the “joiner” part, which has spare M5 holes in case you want to mount something here.  I was still on a carbon fiber kick (read: I still had the hardened steel nozzle installed) so that part was printed with that stuff.  It’s great, but not required if you don’t want to deal with a second and somewhat picky filament.</p>
+<p>Next it’s all about printing all of the rear parts, including what I call the ends and the top/bottom.  The top and bottom parts are not interchangeable between top and bottom, they go on one orientation only. This will likely take a while to print!</p>
+<p><strong>CAUTION:</strong></p>
+<p>As you start to assemble be careful of the resistance of some of the deeper holes that screws and threaded rods are going into.  If you feel too much resistance you may need to drill or tap some of the holes- this depends a ton on your printer.  This is especially true of the M5 threaded rod in the next section, which can get bound in the many parts and get very difficult to move.  If you think that’s happening, back out the M5 rod and use a power drill to drill the part holes.  You really only need threading on the parts on each end of the enclosure, and even if you drill it all out, end caps/nuts will do fine to hold the whole thing together.</p>
+<p>The way I assembled it was to drill out slightly some of the upper/lower parts where the M5 screws go, then bolt the main frame to the uppers and lowers that have screw holes to line up. Not all the uppers and lowers will need to be bolted in, but each of the uppers and lowers has the screw hole just in case. This just makes it easier to keep parts organized.</p>
+<p>Again remember, if the threaded rod gets too hard to screw in, back it out and drill out some wider holes, or else it’s time consuming to deconstruct it with the rods in place. Also be careful to measure your threaded rod- push too far in and you’ll get a bulge on the end.</p>
+<p>Finally, a few words about this project and why I built this one.  This design took about 7 months to design, including a 3 month break due to life and COVID impacts.  I am lucky so far to be able to continue to work on these projects, and it’s been a great relief to “finish” it.  Like all of my previous projects here, all of the design files and parts lists are in this article so people can make/modify as they see fit.  I would remind fellow makers that it’s licensed under a non-commercial license, so while you can print/modify, doing so commercially is not supported under this project.  Want to do that?  Just reach out to me and we can figure something out.</p>
+<p>Going forward though, many of my originals like this one will be for sale in my shop.  They will be more expensive than making it yourself, so if you’re willing to try- make one!  Commissions are limited and not guaranteed, so the items from my project builds may not last.  Check out <a href="https://back7.co/store">https://back7.co/store</a> to see what’s in stock.</p>
+<p>With that out of the way, here are some quick FAQs on my projects related to this one, the Mil-Plastic case:</p>
+<ul><li><strong>Aren’t these just Raspberry Pi laptops?</strong>  Actually, they’re a bit more than that.  This is part sculpture, part functional electronics, and part exercise in design and DIY.  If you want a laptop, then that’s probably the option for you.  These are meant to be hacked/modded/upgraded and redesigned.  I don’t know of a laptop that comes even close to that.</li><li><strong>Do you realize this isn’t waterproof?</strong>  Yes, this is closer to a desk toy than a field computer.</li><li><strong>How do you get your prints to look like that?</strong>  One simple answer- slow prints (no faster than 45mm/sec), a clean build plate, and no supports.</li><li><strong>Are you open to commissions or building these for sale?</strong>  I am doing very limited commissions, and they are more expensive than building it yourself. </li></ul>
+<figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02403.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02403.jpg 600w, /images/content/images/2023/07/JAY02403.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02406.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02406.jpg 600w, /images/content/images/2023/07/JAY02406.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02407.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02407.jpg 600w, /images/content/images/2023/07/JAY02407.jpg 1000w" sizes="(min-width: 720px) 720px" /></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02414-1.jpg" width="2000" height="1334" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02414-1.jpg 600w, /images/content/images/2023/07/JAY02414-1.jpg 1000w, /images/content/images/2023/07/JAY02414-1.jpg 1600w, /images/content/images/2023/07/JAY02414-1.jpg 2048w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02415.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02415.jpg 600w, /images/content/images/2023/07/JAY02415.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02416.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02416.jpg 600w, /images/content/images/2023/07/JAY02416.jpg 1000w" sizes="(min-width: 720px) 720px" /></div></div></div></figure>
+<figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02215.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02215.jpg 600w, /images/content/images/2023/07/JAY02215.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02222.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02222.jpg 600w, /images/content/images/2023/07/JAY02222.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02223.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02223.jpg 600w, /images/content/images/2023/07/JAY02223.jpg 1000w" sizes="(min-width: 720px) 720px" /></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02347.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02347.jpg 600w, /images/content/images/2023/07/JAY02347.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02367.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02367.jpg 600w, /images/content/images/2023/07/JAY02367.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02368.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02368.jpg 600w, /images/content/images/2023/07/JAY02368.jpg 1000w" sizes="(min-width: 720px) 720px" /></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02372.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02372.jpg 600w, /images/content/images/2023/07/JAY02372.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02375.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02375.jpg 600w, /images/content/images/2023/07/JAY02375.jpg 1000w" sizes="(min-width: 720px) 720px" /></div><div class="kg-gallery-image"><img src="/images/content/images/2023/07/JAY02397.jpg" width="1000" height="667" loading="lazy" alt="" srcset="/images/content/images/2023/07/JAY02397.jpg 600w, /images/content/images/2023/07/JAY02397.jpg 1000w" sizes="(min-width: 720px) 720px" /></div></div></div></figure>
+
+</article>
+
+
+      <hr>
+      <!-- _includes/stripe-snippet.html -->
+<!-- Your Stripe snippet starts -->
+<script src="https://js.stripe.com/v3" defer></script>
+<script>
+  // your Stripe init code here
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1SBQYFILH0or1upgGs66pYUL"
+  publishable-key="pk_live_TxnqHb0E2AvvQqsoYu9i2k55002R9cXsIs"
+>
+</stripe-buy-button>
+</script>
+<!-- Your Stripe snippet ends -->
+   <!-- ← add this line -->
+      <footer><small>© 2025 Doscher</small></footer>
+    </main>
+  </body>
+</html>
+

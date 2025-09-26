@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="alternate" type="application/rss+xml" title="Doscher" href="/feed.xml">
+<link rel="stylesheet" href="/assets/site.css">
+
+
+    <title>LoRa Long Range Wireless Remote Control — Doscher</title>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>LoRa Long Range Wireless Remote Control | Doscher</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="LoRa Long Range Wireless Remote Control" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://doscher.net/posts/2019-09-18-work-lora-remote.html" />
+<meta property="og:url" content="https://doscher.net/posts/2019-09-18-work-lora-remote.html" />
+<meta property="og:site_name" content="Doscher" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-18T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="LoRa Long Range Wireless Remote Control" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-09-18T00:00:00-07:00","datePublished":"2019-09-18T00:00:00-07:00","headline":"LoRa Long Range Wireless Remote Control","mainEntityOfPage":{"@type":"WebPage","@id":"https://doscher.net/posts/2019-09-18-work-lora-remote.html"},"url":"https://doscher.net/posts/2019-09-18-work-lora-remote.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <main style="max-width: 720px; margin: 2rem auto; padding: 0 1rem;">
+      <header>
+        <a href="/"><h2>Doscher</h2></a>
+        <nav><a href="/releases/">Releases</a></nav>
+        <hr>
+      </header>
+      <article>
+  <h1>LoRa Long Range Wireless Remote Control</h1>
+  <p><small>September 18, 2019</small></p>
+  <p>There are many benefits to the LoRa protocol, and other sites are doing a <a href="https://youtu.be/hMOwbNUpDQA">slightly better</a> job of explaining LoRa (or a <a href="https://learn.adafruit.com/using-lorawan-and-the-things-network-with-circuitpython">great intro to LoRaWAN</a>) all of the new details as the chips and products that use LoRa become more affordable.  If you’ve ever used 802.11 or WiFi in projects than run off wall power, you’ll appreciate how easy and reliable they are.  Even the Raspberry Pi series of boards have it native on many of their products, going back a few releases.  Pretty easy, right?  Type in your SSID, your network password, and you’re set.  There’s even documentation on how to get a Pi <a href="https://www.reddit.com/r/raspberry_pi/comments/5vns5e/raspberry_pi_3_connecting_to_wireless_8021x/">working with 802.1x</a>.</p>
+<p><strong>Note:</strong> If you just want the parts list for this project, go ahead and scroll to the end of the article - I’ve got links to everything.</p>
+<p>The real problem with WiFi comes when you need to run your project off of batteries.  Without getting into weight or size constraints of batteries for big projects, even just having your project run for more than a few hours can be hard if you’re using WiFi.  WiFi is notoriously power hungry in the small scale circuit community, and the longer the range needed for your project to broadcast, the more power you need.  You may be able to turn the WiFi radio off, but then you’ve still got power-up and broadcast power spikes to deal with.</p>
+<p>Enter <a href="https://en.wikipedia.org/wiki/LoRa">LoRa</a>:  It’s been designed to be low power, run off batteries, and has exceptional range.  The catch?  Bandwidth!  LoRa is far too slow to transmit audio or video, but it’s great for sensor arrays.  <a href="https://www.adafruit.com/">Adafruit</a> is one company that sells their CircuitPython-enabled boards with radios embedded in.  This often means you can run everything you need off a single chip.  For the US market the 900Mhz boards is what you want, and the 433Mhz boards are certified for Europe.</p>
+<p>So with that intro out of the way, you’ve caught up to me- I was sold on LoRa and wanted to get started.  I need two right?  Great- I went out and bought a pair of these and used Adafruit’s sample code.  How I needed to broadcast and listen to custom data.  I didn’t want to spam the LoRa frequencies since the range means you’re going well beyond your home or workshop, and LoRa has rules about how often you’re allowed to transmit.</p>
+<p>Since I have some robotics projects in mind, I wanted to be able to control the robot from well beyond the range of WiFi, and have something that would easily work outdoors.  That’s where my project comes in.  You can see the full history of the build if you go back and look on my Instagram page here, but here’s the broad strokes:</p>
+<p>I designed all of the project in Tinkercad, mostly because it’s still the fastest and most comfortable way for me to work through a design.  There are clearly limits, but I can move <em>fast</em> in Tinkercad.  In the photo below you can see the first set of parts printed via my FDM printer, a Prusa MK3.</p>
+<p>I had a first on this project- I had measured the joystick with a set of digital calipers and my part in white plastic below fit on the first try! I could have easily proceeded with my Prusa printer, as you can see from the test version in black and white PETG below.</p>
+<p>I ran across a mention of the Elegoo MARS resin printer and took a chance- I had heard great things about resin printers, and a small project like this was just the thing.  It was easy to assemble, but looking back there are some real limitations:</p>
+<ol><li>The resin plastic is quite stiff, but threading the screws in and out will likely strip the threads.  It’s probably a good idea to figure out how to use threaded inserts with resin.</li><li>Resin can be brittle- and it needs plenty of UV to cure.</li><li>The resin needs UV, but not heat!  Putting the parts in direct sunlight gets too much heat where I live, and warps the parts badly.  I highly suggest a simple UV lamp or a more expensive curing solution.</li><li>Resin printing is messy, and has fumes- I worked in a well-ventilated workshop and always wore gloves when handling parts.</li><li>Resin has consumables like gloves and isopropyl alcohol that FDM printers don’t have.  Be ready to use a ton of gloves and 99% isopropyl alcohol.</li></ol>
+
+</article>
+
+
+      <hr>
+      <!-- _includes/stripe-snippet.html -->
+<!-- Your Stripe snippet starts -->
+<script src="https://js.stripe.com/v3" defer></script>
+<script>
+  // your Stripe init code here
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1SBQYFILH0or1upgGs66pYUL"
+  publishable-key="pk_live_TxnqHb0E2AvvQqsoYu9i2k55002R9cXsIs"
+>
+</stripe-buy-button>
+</script>
+<!-- Your Stripe snippet ends -->
+   <!-- ← add this line -->
+      <footer><small>© 2025 Doscher</small></footer>
+    </main>
+  </body>
+</html>
+
