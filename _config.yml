@@ -4,10 +4,25 @@ baseurl: ""
 markdown: kramdown
 theme: minima
 
-collections:
-  posts:
-    output: true
-    permalink: /:collection/:slug/
+title: "Doscher"
+url: "https://doscher.net"   # use doscher.com after cutover
+baseurl: ""
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Make anything under posts/ render with the post layout and a /posts/slug/ URL
+defaults:
+  - scope:
+      path: "posts"
+    values:
+      layout: post
+      permalink: /posts/:slug/
+      sitemap: true
 
 plugins:
   - jekyll-feed
