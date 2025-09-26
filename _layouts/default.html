@@ -14,6 +14,7 @@
       </header>
       {{ content }}
       <hr>
+      {% include stripe-snippet.html %}   <!-- ← add this line -->
       <footer><small>© {{ "now" | date: "%Y" }} {{ site.title }}</small></footer>
     </main>
   </body>
