@@ -24,17 +24,14 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'       # ← add this line
-          bundler-cache: true
-
-      - name: Install dependencies
-        run: bundle install --jobs 4
+          ruby-version: '3.3'
+          bundler-cache: true   # runs 'bundle install' automatically and caches gems
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
-          PAGES_REPO_NWO: jdoscher/jdoscher.github.io   # ← add this
+          PAGES_REPO_NWO: jdoscher/jdoscher.github.io  # for jekyll-github-metadata
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
